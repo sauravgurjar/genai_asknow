@@ -1,0 +1,62 @@
+/** Mobile-only overrides; tablet and desktop keep their own layouts. */
+export const mobileQuery = '@media (max-width: 599.95px)'
+export const mobileLoginStyles = {
+  background: { display: 'none' },
+  branding: {
+    minHeight: 'max(280px, calc(100dvh - 341px))',
+    px: '20px',
+    py: '32px',
+    bgcolor: 'rgba(255,255,255,.1)',
+    backdropFilter: 'blur(26px)',
+  },
+  brandContent: {
+    mt: 0,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    textAlign: 'center',
+  },
+  brandTitle: { mt: '24px', fontSize: 32, letterSpacing: '-1.56px' },
+  titleSeparator: { display: 'none' },
+  tagline: { display: 'block', fontSize: 24, letterSpacing: '-1.56px' },
+  description: {
+    maxWidth: 280,
+    fontSize: 12,
+    fontWeight: 400,
+    lineHeight: 1.5,
+  },
+  panel: {
+    minHeight: 341,
+    borderRadius: '40px 40px 0 0',
+    boxShadow: '0 -4px 12px rgba(0,0,0,.1)',
+    px: '20px',
+    pt: '52px',
+    pb: 'max(12px, env(safe-area-inset-bottom))',
+    alignItems: 'flex-start',
+  },
+  panelContent: { maxWidth: 440 },
+  header: { pt: 0 },
+  welcomeTitle: { fontSize: 24, fontWeight: 600, letterSpacing: '-.72px' },
+  signInDescription: {
+    mt: '12px',
+    fontSize: 12,
+    fontWeight: 400,
+    letterSpacing: '-.36px',
+  },
+  button: {
+    mt: '24px',
+    mb: '50px',
+    minHeight: 56,
+    py: '16px',
+    fontWeight: 700,
+  },
+  footer: {
+    height: 72,
+    py: '16px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
+  footerText: { fontWeight: 400, lineHeight: 1.2 },
+  desktopDivider: { display: 'none' },
+} as const
